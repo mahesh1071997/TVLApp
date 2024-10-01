@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/customRootStyle"
+    tools:context=".Activity.ManageImageActivity">
+
+    <LinearLayout
+        android:id="@+id/managerImagesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Recording Time"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/recTotalDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="00:00:55"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@android:color/white" />
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="1dp">
+
+            <LinearLayout
+                android:id="@+id/imageListLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/addImageBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/ic_add_image"
+                        android:padding="4dp"
+                        android:text="  Add Image"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+                        android:textColor="?attr/ThemeColor" />
+                   <!-- <TextView
+                        android:id="@+id/LoopImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/ic_equalizer"
+                        android:padding="8dp"
+                        android:text="Loop Image"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+                        android:textColor="?attr/ThemeColor" />
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:id="@+id/checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/ThemeColor"
+                        android:text="Loop images" />-->
+                    <TextView
+                        android:id="@+id/equalizerBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/ic_equalizer"
+                        android:padding="4dp"
+                        android:text="  Equalizer"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+                        android:textColor="?attr/ThemeColor" />
+
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:id="@+id/checkboxAdvnc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ThemeColor"
+                    android:text="Advanced Image Mode" />
+                <CheckBox
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:checked="true"
+                    android:id="@+id/checkboxLoop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ThemeColor"
+                    android:text="Loop Images" />
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                     <TextView
+                       android:id="@+id/Lblduration"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:padding="8dp"
+                       android:text="Duration"
+                       android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+                       android:textColor="?attr/ThemeColor" />
+
+                    <EditText
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/editTextImgDuraton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="5"
+                        android:ems="10"
+                        android:layout_marginEnd="8dp"
+                        android:inputType="number" />
+
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/imgRecView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/noImagesLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+
+                android:visibility="gone"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:text="No Image Found" />
+
+                <TextView
+                    android:id="@+id/addFirstImage"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_add_image"
+                    android:padding="8dp"
+                    android:text="  Add Image"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+                    android:textColor="?attr/ThemeColor" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+<!--
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saveButton"
+        android:backgroundTint="@android:color/white"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:src="@drawable/ic_save" />-->
+
+</RelativeLayout>

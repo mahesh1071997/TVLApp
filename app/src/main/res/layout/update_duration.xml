@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="Hour"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+        <ImageView
+            android:id="@+id/incrHour"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_incr_circle"/>
+
+        <TextView
+            android:id="@+id/hourTextView"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="00"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"/>
+
+        <ImageView
+            android:id="@+id/decrHour"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_decr_circle"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="Minute"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+        <ImageView
+            android:id="@+id/incrMinute"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_incr_circle"/>
+
+        <TextView
+            android:id="@+id/minuteTextView"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="00"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"/>
+
+        <ImageView
+            android:id="@+id/decrMinute"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_decr_circle"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="Second"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+        <ImageView
+            android:id="@+id/incrSecond"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_incr_circle"/>
+
+        <TextView
+            android:id="@+id/secondTextView"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="00"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"/>
+
+        <ImageView
+            android:id="@+id/decrSecond"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_decr_circle"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="ThemeColor">@color/ThemeColor</item>
+
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/ThemeColor</item>
+        <item name="colorPrimaryDark">@color/ThemeColorLight</item>
+        <item name="colorAccent">@color/ThemeColor</item>
+        <item name="buttonStyle">@style/customButtonStyle</item>
+        <item name="editTextStyle">@style/customEditTextStyle</item>
+
+        <item name="actionMenuTextColor">@android:color/white</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="customButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/button_bg</item>
+    </style>
+
+    <style name="customEditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/edittext_bg</item>
+        <item name="android:textColor">@color/ThemeColor</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+
+    <style name="customCheckboxStyle" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:textColor">?attr/ThemeColor</item>
+    </style>
+
+    <style name="customRootStyle">
+        <item name="android:padding">16dp</item>
+        <item name="android:background">?attr/ThemeColor</item>
+    </style>
+
+
+</resources>

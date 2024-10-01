@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recItemLayout11"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/ThemeColor"
+    android:padding="1dp"
+    android:layout_margin="8dp">
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/recItemLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/recDefaultImage"
+                android:layout_width="match_parent"
+                android:layout_weight="5"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"/>
+<!--            <ImageView-->
+<!--              -->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_weight="5"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="@drawable/circle"-->
+<!--                android:layout_gravity="center"-->
+<!--                />-->
+            <TextView
+                android:id="@+id/recThumbnailId"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Description"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/recTitle"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:text="Title"
+                    android:textColor="?attr/ThemeColor" />
+
+                <TextView
+                    android:id="@+id/recDetails"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Description"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_right_arrow"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
